@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:11-alpine
+    environment:
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - .cache/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    restart: always
+    build: .
+    environment:
+      - LOG_LEVEL=INFO
+      - GUNICORN_WORKERS=4
+      - SECRET_KEY=change_me
+      - DATABASE_URL=postgresql://postgres:password@db:5432/project
+    ports:
+      - "5000:5000"
+
+
+

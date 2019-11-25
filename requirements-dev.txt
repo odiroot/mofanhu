@@ -1,0 +1,6 @@
+-r requirements.txt
+
+black
+Flask-DebugToolbar
+flask-konch
+isort

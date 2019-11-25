@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello</title>
+  <link rel="stylesheet" type="text/css"
+      href="{{ url_for('vanilla.static', filename='style.css') }}">
+</head>
+
+<body>
+  <h1>Hello World!</h2>
+
+  <img src="{{ url_for('static', filename='flask.jpg') }}"
+      title="Project logo">
+
+  <h3>Examples</h3>
+  <ul>
+    {% for row in examples %}
+    <li title="{{ row.id }}">
+      {{ row.name }}
+      {% if row.good %}
+      ✔️
+      {% else %}
+      ✖️
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

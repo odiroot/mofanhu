@@ -1,0 +1,8 @@
+# Rename to .envrc.
+export FLASK_APP=cli
+export FLASK_ENV=development
+export LOG_LEVEL=DEBUG
+export DATABASE_URL='postgresql://postgres:password@localhost:5432/project'
+export TEST_DATABASE_URL='postgresql://postgres:password@localhost:5432/project_test'
+
+export SECRET_KEY=deadbeefc0ffee  # REGENERATE THIS!
