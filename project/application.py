@@ -3,6 +3,7 @@ import logging
 from flask import Flask
 
 from project.extensions import db, migrate
+from project.restful import bp as restful_bp
 from project.vanilla.views import bp as vanilla_bp
 
 
@@ -34,6 +35,7 @@ def register_extensions(app):
 
 def attach_blueprints(app):
     app.register_blueprint(vanilla_bp, url_prefix="")
+    app.register_blueprint(restful_bp, url_prefix="/restful")
 
 
 def register_debug(app):
