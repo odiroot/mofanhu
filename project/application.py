@@ -40,6 +40,7 @@ def attach_blueprints(app):
     app.register_blueprint(restful_bp, url_prefix="/restful")
     api.register_blueprint(smorest_bp, url_prefix="/smorest")
 
+
 def register_debug(app):
     from flask_debugtoolbar import DebugToolbarExtension
 
