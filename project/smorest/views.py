@@ -31,12 +31,11 @@ class ExampleList(MethodView):
 
     @bp.arguments(ExampleSchema)
     @bp.response(ExampleSchema, code=201)
-    def post(self, data):
+    def post(self, instance):
         """Create an example.
 
         Add a new example to the DB.
         """
-        obj = Example(**data)
-        db.session.add(obj)
+        db.session.add(instance)
         db.session.commit()
-        return obj
+        return instance

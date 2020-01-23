@@ -11,3 +11,6 @@ psycopg2-binary~=2.8.4
 # API frameworks.
 Flask-RESTful~=0.3.7
 flask-smorest~=0.18.4
+
+# Libraries.
+marshmallow-sqlalchemy~=0.21.0
