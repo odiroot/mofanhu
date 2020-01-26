@@ -18,9 +18,11 @@ A robust template for Flask applications.
   variables.
 - Serving dynamically rendered HTML page and example static files with pure
   Flask. Example template.
+- Example API endpoints in two flavours: _Flask-RESTful_ and _flask-smorest_.
 - Support for _PostgreSQL_ database and ORM models using _SQLAlchemy_.
   Example model.
-- Support for migrations with alembic. Example migration.
+- Support for migrations with _alembic_. Example migration.
+- Support for background tasks with _dramatiq_. Example task.
 - Configuration for running on _Heroku_ cloud.
 - Separate production, testing and development requirements.
 - Easy testing with _tox_ and _py.test_. Example tests.

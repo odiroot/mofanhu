@@ -14,3 +14,7 @@ flask-smorest~=0.19.2
 
 # Libraries.
 marshmallow-sqlalchemy~=0.22.3
+
+# Background tasks.
+Flask-Melodramatiq~=0.3.7
+redis~=3.3.11
