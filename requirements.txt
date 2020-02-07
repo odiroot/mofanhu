@@ -9,7 +9,7 @@ Flask-SQLAlchemy~=2.4.1
 psycopg2-binary~=2.8.4
 
 # API frameworks.
-Flask-RESTful~=0.3.7
+Flask-RESTful~=0.3.8
 flask-smorest~=0.18.5
 
 # Libraries.
