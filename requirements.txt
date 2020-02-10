@@ -13,4 +13,4 @@ Flask-RESTful~=0.3.8
 flask-smorest~=0.18.5
 
 # Libraries.
-marshmallow-sqlalchemy~=0.21.0
+marshmallow-sqlalchemy~=0.22.2
