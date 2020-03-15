@@ -19,5 +19,5 @@ Flask-Admin~=1.5.5
 marshmallow-sqlalchemy~=0.22.3
 
 # Background tasks.
-Flask-Melodramatiq~=0.3.7
-redis~=3.3.11
+Flask-Melodramatiq~=0.3.8
+redis~=3.4.1
