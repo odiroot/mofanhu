@@ -27,3 +27,9 @@ OPENAPI_SWAGGER_UI_VERSION = "3.24.2"
 
 # Background tasks.
 DRAMATIQ_BROKER_URL = env.str("BROKER_URL", "redis://localhost:6379/3")
+
+# Debug toolbar.
+DEBUG_TB_INTERCEPT_REDIRECTS = False
+
+# Admin pages.
+FLASK_ADMIN_SWATCH = "sandstone"

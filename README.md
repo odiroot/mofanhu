@@ -33,6 +33,7 @@ A robust template for Flask applications.
 - Easy entry vector for WSGI servers, demonstrated with _Gunicorn_.
 - _Dockerfile_ to build a minimal¸ production-ready Docker image.
 - Rudimentary definition for _Docker Compose_ to launch the complete project.
+- Practical CRUD UI using Flask-Admin.
 - _EditorConfig_ support.
 
 ## Running

@@ -12,6 +12,9 @@ psycopg2-binary~=2.8.4
 Flask-RESTful~=0.3.8
 flask-smorest~=0.19.2
 
+# Admin pages.
+Flask-Admin~=1.5.5
+
 # Libraries.
 marshmallow-sqlalchemy~=0.22.3
 

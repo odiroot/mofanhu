@@ -1,4 +1,6 @@
-from project.extensions import db
+from flask_admin.contrib.sqla import ModelView
+
+from project.extensions import admin, db
 
 
 class Example(db.Model):
@@ -10,3 +12,6 @@ class Example(db.Model):
 
     def __repr__(self):
         return f"<Example({self.name})>"
+
+
+admin.add_view(ModelView(Example, db.session))

@@ -2,7 +2,7 @@ import logging
 
 from flask import Flask
 
-from project.extensions import api, broker, db, migrate
+from project.extensions import admin, api, broker, db, migrate
 from project.restful import bp as restful_bp
 from project.smorest.views import bp as smorest_bp
 from project.vanilla.views import bp as vanilla_bp
@@ -34,6 +34,8 @@ def register_extensions(app):
     migrate.init_app(app, db)
     api.init_app(app)
     broker.init_app(app)
+    # NOTE: Unprotected.
+    admin.init_app(app)
 
 
 def attach_blueprints(app):
