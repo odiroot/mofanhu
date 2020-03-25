@@ -10,7 +10,7 @@ psycopg2-binary~=2.8.4
 
 # API frameworks.
 Flask-RESTful~=0.3.8
-flask-smorest~=0.20.0
+flask-smorest~=0.21.0
 
 # Admin pages.
 Flask-Admin~=1.5.5
