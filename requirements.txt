@@ -5,7 +5,7 @@ gunicorn~=20.0.4
 
 # Database access.
 Flask-Migrate~=2.5.3
-Flask-SQLAlchemy~=2.4.2
+Flask-SQLAlchemy~=2.4.3
 psycopg2-binary~=2.8.5
 
 # API frameworks.
