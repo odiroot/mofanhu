@@ -11,6 +11,7 @@ pytest_plugins = ["pytest-flask-sqlalchemy"]
 
 
 class Config:
+    DEBUG = False
     LOG_LEVEL = "ERROR"
     TESTING = True
     SECRET_KEY = "testing"
