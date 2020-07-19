@@ -23,7 +23,6 @@ class Config:
     OPENAPI_VERSION = "3.0.2"
 
 
-
 @pytest.fixture(scope="session")
 def database(request, worker_id):
     url = sa.engine.url.make_url(Config.SQLALCHEMY_DATABASE_URI)
