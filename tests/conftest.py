@@ -17,6 +17,11 @@ class Config:
     SECRET_KEY = "testing"
     SQLALCHEMY_DATABASE_URI = env.str("TEST_DATABASE_URL")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    # Smorest requirement.
+    API_TITLE = "Test App"
+    API_VERSION = "v1"
+    OPENAPI_VERSION = "3.0.2"
+
 
 
 @pytest.fixture(scope="session")
