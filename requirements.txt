@@ -16,7 +16,7 @@ flask-smorest~=0.24.1
 Flask-Admin~=1.5.6
 
 # Libraries.
-marshmallow-sqlalchemy~=0.23.1
+marshmallow-sqlalchemy~=0.24.0
 
 # Background tasks.
 Flask-Melodramatiq~=0.3.8
