@@ -30,7 +30,7 @@ jobs:
         pip install -r requirements-test.txt bandit black flake8 safety
     - name: Lint the code
       run: |
-        black --check --diff .
+        black --config pyproject.toml --check --diff .
         bandit -r -l -i -q migrations project cli.py wsgi.py
         flake8 --count .
         safety check --bare
