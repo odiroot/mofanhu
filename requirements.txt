@@ -1,5 +1,5 @@
 # Core.
-environs~=9.2.0
+environs~=9.3.1
 Flask~=1.1.2
 gunicorn~=20.0.4
 
