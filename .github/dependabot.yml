@@ -9,3 +9,5 @@ updates:
   target-branch: master
   labels:
   - dependencies
+  assignees:
+  - odiroot
