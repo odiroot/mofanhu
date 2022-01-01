@@ -1,10 +1,10 @@
-from marshmallow_sqlalchemy import ModelSchema, field_for
+from marshmallow_sqlalchemy import SQLAlchemySchema, auto_field
 
 from project.vanilla.models import Example
 
 
-class ExampleSchema(ModelSchema):
-    id = field_for(Example, "id", dump_only=True)
+class ExampleSchema(SQLAlchemySchema):
+    id = auto_field(dump_only=True)
 
     class Meta:
         model = Example

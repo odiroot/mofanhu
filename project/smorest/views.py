@@ -21,7 +21,7 @@ class Index(MethodView):
 
 @bp.route("/example/")
 class ExampleList(MethodView):
-    @bp.response(ExampleSchema(many=True))
+    @bp.response(200, ExampleSchema(many=True))
     def get(self):
         """List examples.
 
@@ -30,7 +30,7 @@ class ExampleList(MethodView):
         return Example.query.all()
 
     @bp.arguments(ExampleSchema)
-    @bp.response(ExampleSchema, code=201)
+    @bp.response(201, ExampleSchema)
     def post(self, instance):
         """Create an example.
 
