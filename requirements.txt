@@ -21,4 +21,4 @@ marshmallow-sqlalchemy~=0.28.0
 
 # Background tasks.
 Flask-Melodramatiq~=0.3.9
-redis~=4.1.0
+redis~=4.2.0
