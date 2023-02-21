@@ -15,7 +15,7 @@ Flask-RESTful~=0.3.9
 flask-smorest~=0.40.0
 
 # Admin pages.
-Flask-Admin~=1.6.0
+Flask-Admin~=1.6.1
 
 # Libraries.
 marshmallow-sqlalchemy~=0.28.0
