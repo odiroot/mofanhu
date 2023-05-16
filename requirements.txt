@@ -12,7 +12,7 @@ sqlalchemy~=2.0.0  # Workaround for pytest-flask-sqlalchemy problems.
 
 # API frameworks.
 Flask-RESTful~=0.3.9
-flask-smorest~=0.40.0
+flask-smorest~=0.42.0
 
 # Admin pages.
 Flask-Admin~=1.6.0
