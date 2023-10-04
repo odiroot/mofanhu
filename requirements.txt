@@ -7,7 +7,7 @@ werkzeug~=2.0.3
 # Database access.
 Flask-Migrate~=4.0.1
 Flask-SQLAlchemy~=3.0.2
-psycopg2-binary~=2.9.4
+psycopg2-binary~=2.9.9
 sqlalchemy~=2.0.0  # Workaround for pytest-flask-sqlalchemy problems.
 
 # API frameworks.
